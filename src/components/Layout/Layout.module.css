@@ -1,0 +1,209 @@
+/*============================================*
+  Header
+ *============================================*/
+.header {
+  padding: 25px 30px;
+  background-color: var(--primary-blue-color);
+  color: #fff;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  margin: 0px;
+  padding: 0px;
+}
+.header__nav > ul > li {
+  list-style: none;
+}
+.header__nav-link {
+  font-family: "JetsBrain";
+  text-decoration: none;
+  color: #fff;
+}
+.web-logo {
+  width: auto;
+  height: 30px;
+}
+
+/*============================================*
+  Mobile Menu  
+ *============================================*/
+.mobile-menu-toggle {
+  background-color: transparent;
+  color: #fff !important;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-blue-color);
+  z-index: 4;
+  transition: 0.4s ease-in-out;
+}
+.mobile-menu.is-toggled {
+  right: 0px;
+}
+.mobile-menu__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  pointer-events: none;
+  transition: 0.4s ease-in-out;
+}
+.mobile-menu__overlay.is-toggled {
+  opacity: 0.6;
+  visibility: visible;
+}
+.mobile-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 1rem;
+}
+.mobile-menu__header .web-logo {
+  width: 40px;
+  height: 40px;
+}
+.mobile-menu__header .close-btn {
+  color: #fff;
+}
+.mobile-menu__nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+.mobile-menu__nav ul li {
+  list-style: none;
+  padding: 15px 20px;
+}
+.mobile-menu__nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "JetsBrain";
+  font-weight: 500;
+  font-size: 20px;
+}
+.mobile-menu__nav-service {
+  background-color: transparent !important;
+  color: #fff;
+  padding: 15px 20px !important;
+  box-shadow: none !important;
+}
+.mobile-menu__nav-service::before {
+  content: none !important;
+}
+.mobile-menu__nav-service button {
+  padding: 0px !important;
+}
+.mobile-menu__nav-service button > span {
+  margin: 0px;
+  font-family: "JetsBrain" !important;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.mobile-menu__service-sub {
+  padding: 0px !important;
+}
+.mobile-menu__service-sub li {
+  padding: 15px 0px !important;
+}
+.mobile-menu__service-sub li:last-child {
+  padding-bottom: 0px !important;
+}
+.mobile-menu__service-sub li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*============================================*
+  Footer
+ *============================================*/
+.footer {
+  padding: 60px 30px;
+  background-color: var(--secondary-color);
+}
+.footer .web-logo {
+  height: 40px;
+}
+.footer__upper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.footer__upper > div {
+  flex: 1;
+}
+.footer__nav {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  gap: 2.5rem;
+}
+.footer__nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer__nav ul li {
+  list-style: none;
+  margin-bottom: 0.875rem;
+}
+.footer__nav ul li:first-child {
+  color: var(--primary-blue-color);
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  font-family: "JetsBrain";
+}
+.footer__nav-link {
+  color: var(--primary-green-color);
+  text-decoration: none;
+}
+.footer__bottom {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/*============================================*
+  Media Query
+ *============================================*/
+@media only screen and (max-width: 876px) {
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer__upper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer__nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+  .footer__bottom {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 603px) {
+  .header {
+    padding: 20px;
+  }
+  .web-logo,
+  .footer .web-logo {
+    height: 30px;
+  }
+}

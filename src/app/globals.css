@@ -1,42 +1,92 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  src: url("../../public/fonts/Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../../public/fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../../public/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../../public/fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 600;
+  src: url("../../public/fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../../public/fonts/Roboto/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "JetsBrain";
+  font-weight: 100;
+  src: url("../../public/fonts/JetsBrainMono/JetBrainsMono-Thin.ttf");
+}
+@font-face {
+  font-family: "JetsBrain";
+  font-weight: 200;
+  src: url("../../public/fonts/JetsBrainMono/JetBrainsMono-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "JetsBrain";
+  font-weight: 300;
+  src: url("../../public/fonts/JetsBrainMono/JetBrainsMono-Light.ttf");
+}
+@font-face {
+  font-family: "JetsBrain";
+  font-weight: 400;
+  src: url("../../public/fonts/JetsBrainMono/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+  font-family: "JetsBrain";
+  font-weight: 500;
+  src: url("../../public/fonts/JetsBrainMono/JetBrainsMono-Medium.ttf");
+}
+@font-face {
+  font-family: "JetsBrain";
+  font-weight: 600;
+  src: url("../../public/fonts/JetsBrainMono/JetBrainsMono-Bold.ttf");
+}
+@font-face {
+  font-family: "JetsBrain";
+  font-weight: 700;
+  src: url("../../public/fonts/JetsBrainMono/JetBrainsMono-ExtraBold.ttf");
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-blue-color: #1a3358;
+  --primary-green-color: #00a5a7;
+  --secondary-color: #f8f3f7;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  margin: 0px;
+  font-family: "Roboto";
+}
+main {
+  min-height: 100dvh;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.text-primary {
+  color: var(--primary-blue-color) !important;
+}
+.text-primary-g {
+  color: var(--primary-green-color) !important;
+}
+.text-secondary {
+  color: var(--secondary-color) !important;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.p-0 {
+  padding: 0px !important;
 }
