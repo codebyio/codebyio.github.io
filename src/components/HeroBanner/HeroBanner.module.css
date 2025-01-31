@@ -1,0 +1,42 @@
+.hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.hero-banner__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-banner__title {
+  font-family: "JetsBrain";
+  font-size: 3.5rem;
+  width: 50%;
+  margin: 0px auto 1.875rem auto;
+  color: #fff;
+}
+.hero-banner__subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0px;
+  color: #fff;
+}
+@media only screen and (max-width: 875px) {
+  .hero-banner__title {
+    width: 75%;
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 603px) {
+  .hero-banner__title {
+    width: 100%;
+    font-size: 2rem;
+    padding: 20px;
+  }
+}

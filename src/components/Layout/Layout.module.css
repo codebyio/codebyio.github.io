@@ -2,9 +2,28 @@
   Header
  *============================================*/
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   padding: 25px 30px;
-  background-color: var(--primary-blue-color);
+  background-color: transparent;
   color: #fff;
+  z-index: 5;
+}
+.header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+.header-bg.is-scrolling {
+  background-color: var(--primary-blue-color);
 }
 .header__wrapper {
   display: flex;

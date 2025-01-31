@@ -69,6 +69,9 @@
   --primary-green-color: #00a5a7;
   --secondary-color: #f8f3f7;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0px;
   font-family: "Roboto";

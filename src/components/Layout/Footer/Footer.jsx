@@ -32,7 +32,7 @@ const Footer = () => {
               </li>
             </ul>
             <ul>
-              <li>Misc</li>
+              <li>Company</li>
               <li>
                 <a href='#' className={classes["footer__nav-link"]}>
                   Who We Are
