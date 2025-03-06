@@ -2,6 +2,7 @@
   border: 2px solid var(--primary-blue-color);
   color: var(--primary-blue-color);
   min-height: 200px;
+  height: 100%;
 }
 .window-card__tool {
   display: flex;
@@ -78,4 +79,5 @@
 .window-card__title {
   font-family: "JetsBrain";
   margin-bottom: 1rem;
+  font-weight: 500;
 }

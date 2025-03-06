@@ -1,11 +1,12 @@
 .section {
   padding: 20px;
+  margin-bottom: 2rem;
 }
 .section.small {
-  min-height: 40vh;
+  min-height: 25vh;
 }
 .section.medium {
-  min-height: 75vh;
+  min-height: 50vh;
 }
 .section.large {
   min-height: 100vh;

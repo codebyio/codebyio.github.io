@@ -9,7 +9,11 @@ const Footer = () => {
       <div className={classes["footer__upper"]}>
         <div>
           <Image src={LOGO_COLOR} className={classes["web-logo"]} alt='CodeByIO' />
-          <p className='text-primary-g'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi obcaecati dolorem eligendi, aliquam quisquam quod reiciendis, iure ex pariatur fugiat natus earum harum nostrum illo, aut nihil expedita error consequatur?</p>
+          <p className='text-primary-g'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi obcaecati dolorem
+            eligendi, aliquam quisquam quod reiciendis, iure ex pariatur fugiat natus earum harum
+            nostrum illo, aut nihil expedita error consequatur?
+          </p>
         </div>
         <div>
           <nav className={classes["footer__nav"]}>
@@ -23,6 +27,11 @@ const Footer = () => {
               <li>
                 <a href='#' className={classes["footer__nav-link"]}>
                   Website Mockup
+                </a>
+              </li>
+              <li>
+                <a href='#' className={classes["footer__nav-link"]}>
+                  Digital Marketing
                 </a>
               </li>
               <li>
@@ -47,7 +56,9 @@ const Footer = () => {
           </nav>
         </div>
       </div>
-      <div className={`${classes["footer__bottom"]} text-primary`}>© CodeByIO 2024 — All Rights Reserved</div>
+      <div className={`${classes["footer__bottom"]} text-primary`}>
+        © CodeByIO 2024 — All Rights Reserved
+      </div>
     </footer>
   );
 };

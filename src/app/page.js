@@ -1,4 +1,5 @@
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
+import CtaSection from "@/components/shared/CtaSection/CtaSection";
 import Section from "@/components/shared/Section/Section";
 import WindowCard from "@/components/shared/WindowCard/WindowCard";
 import Grid2 from "@mui/material/Grid2";
@@ -14,7 +15,7 @@ export default function Home() {
       />
       <Section position='center'>
         <h3 className='text-center'>
-          {`At codeby.io, we turn digital dreams into reality with expert craftsmanship and innovative solutions.`}
+          {`At CodeByIO, we turn digital dreams into reality with expert craftsmanship and innovative solutions.`}
           <br></br>
           {`We're committed to delivering high-performance, user-friendly websites that bring visions to life.`}
           <br></br>
@@ -44,7 +45,7 @@ export default function Home() {
           </Grid2>
         </Grid2>
       </Section>
-      {/* CTA Section */}
+      <CtaSection />
     </>
   );
 }

@@ -1,4 +1,10 @@
+.cta-btn__wrapper {
+  display: inline-block;
+  text-decoration: none;
+}
 .cta-btn {
+  display: flex;
+  gap: 0.5rem;
   background-color: transparent;
   border-radius: 30px;
   border: 1px solid var(--secondary-color);
