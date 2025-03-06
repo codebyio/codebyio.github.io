@@ -2,8 +2,9 @@ import Image from "next/image";
 
 import classes from "../Layout.module.css";
 import LOGO_WHITE from "../../../../public/assets/icon/LOGO_WHITE_TEXT.png";
-import HeaderNav from "./HeaderNav/HeaderNav";
 import HeaderBackground from "./HeaderBackground/HeaderBackground";
+import DesktopNav from "./DesktopNav/DesktopNav";
+import MobileNav from "./MobileNav/MobileNav";
 
 const Header = () => {
   return (
@@ -11,7 +12,8 @@ const Header = () => {
       <HeaderBackground />
       <div className={classes["header__wrapper"]}>
         <Image src={LOGO_WHITE} className={classes["web-logo"]} alt='CodeByIO' />
-        <HeaderNav />
+        <DesktopNav />
+        <MobileNav />
       </div>
     </header>
   );

@@ -10,7 +10,9 @@ const HeaderBackground = () => {
     });
   }, []);
 
-  return <div className={`${classes["header-bg"]} ${isScrolling && classes["is-scrolling"]}`}></div>;
+  return (
+    <div className={`${classes["header-bg"]} ${isScrolling && classes["is-scrolling"]}`}></div>
+  );
 };
 
 export default HeaderBackground;

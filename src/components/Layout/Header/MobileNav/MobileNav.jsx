@@ -23,7 +23,7 @@ const MobileNav = () => {
   }, []);
 
   return (
-    <>
+    <div className='mobile-view'>
       <IconButton className={`${classes["mobile-menu-toggle"]} p-0`} size='small' onClick={toggleMenu}>
         <MdMenu fontSize='1.6rem' />
       </IconButton>
@@ -54,6 +54,9 @@ const MobileNav = () => {
                   <li>
                     <a href=''>Tech Consultancy</a>
                   </li>
+                  <li>
+                    <a href=''>Digital Marketing</a>
+                  </li>
                 </ul>
               </AccordionDetails>
             </Accordion>
@@ -66,7 +69,7 @@ const MobileNav = () => {
         </nav>
       </div>
       <div className={`${classes["mobile-menu__overlay"]} ${menuIsToggled && classes["is-toggled"]}`}></div>
-    </>
+    </div>
   );
 };
 

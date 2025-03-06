@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  padding: 25px 30px;
+  padding: 0px 30px;
   background-color: transparent;
   color: #fff;
   z-index: 5;
@@ -41,9 +41,69 @@
   list-style: none;
 }
 .header__nav-link {
+  display: inline-block;
+  line-height: 80px;
   font-family: "JetsBrain";
   text-decoration: none;
   color: #fff;
+}
+.header__nav-parent {
+  position: relative;
+}
+.header__nav-parent > .header__nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.header__sub-menu {
+  position: absolute;
+  padding: 0px;
+  right: 0px;
+  color: var(--primary-blue-color);
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10%);
+  transition: 0.3s;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.header__nav-parent:hover .header__sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+.header__sub-menu > li {
+  width: 100%;
+  list-style: none;
+  padding: 15px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+  border: none;
+}
+.header__sub-menu > li:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.header__sub-menu > li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.header__sub-menu > li:hover {
+  background-color: #e1d9e3;
+}
+.header__sub-menu > li > a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.header__sub-menu > li > a > svg {
+  font-size: 1.25rem;
 }
 .web-logo {
   width: auto;
@@ -200,6 +260,9 @@
   Media Query
  *============================================*/
 @media only screen and (max-width: 876px) {
+  .header {
+    padding: 20px;
+  }
   .footer {
     padding: 40px 20px;
   }
@@ -218,9 +281,6 @@
   }
 }
 @media only screen and (max-width: 603px) {
-  .header {
-    padding: 20px;
-  }
   .web-logo,
   .footer .web-logo {
     height: 30px;

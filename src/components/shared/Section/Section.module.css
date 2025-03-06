@@ -1,0 +1,23 @@
+.section {
+  padding: 20px;
+}
+.section.small {
+  min-height: 40vh;
+}
+.section.medium {
+  min-height: 75vh;
+}
+.section.large {
+  min-height: 100vh;
+}
+.section.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section > h3 {
+  font-family: "JetsBrain";
+  font-weight: 500;
+  margin: 0px;
+  color: var(--primary-blue-color);
+}

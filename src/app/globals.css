@@ -75,11 +75,21 @@
 body {
   margin: 0px;
   font-family: "Roboto";
+  background-color: #f8f3f7;
 }
 main {
   min-height: 100dvh;
 }
 
+.text-center {
+  text-align: center !important;
+}
+.text-start {
+  text-align: left !important;
+}
+.text-end {
+  text-align: right !important;
+}
 .text-primary {
   color: var(--primary-blue-color) !important;
 }
@@ -92,4 +102,26 @@ main {
 
 .p-0 {
   padding: 0px !important;
+}
+@media only screen and (min-width: 876px) {
+  .desktop-view {
+    display: block !important;
+  }
+  .desktop-view.flex {
+    display: flex !important;
+  }
+  .mobile-view {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .desktop-view {
+    display: none !important;
+  }
+  .mobile-view {
+    display: block !important;
+  }
+  .mobile-view.flex {
+    display: flex !important;
+  }
 }
