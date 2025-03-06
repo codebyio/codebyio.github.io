@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: flex-end;
   background-color: var(--primary-blue-color);
+  border-bottom: 2px solid var(--primary-blue-color);
   padding: 5px;
   gap: 5px;
 }
