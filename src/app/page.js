@@ -23,21 +23,21 @@ export default function Home() {
         </h3>
       </Section>
       <Section position='center'>
-        <Grid2 container spacing={2}>
-          <Grid2 item size={4}>
+        <Grid2 container spacing={3}>
+          <Grid2 item offset={{ xs: 0, md: 2 }} size={{ xs: 12, md: 4 }}>
             <WindowCard
               title='Vision'
               body='To be the trusted partner for transforming digital dreams into reality, delivering high-quality websites and expert tech consultancy with a fun and engaging approach.'
             />
           </Grid2>
-          <Grid2 item size={4}>
+          <Grid2 item size={{ xs: 12, md: 4 }}>
             <WindowCard
               title='Mission'
               body='To provide tailored web solutions and consultancy services, combining creativity, expertise, and a fun spirit to ensure client satisfaction and success.'
               invertColor={true}
             />
           </Grid2>
-          <Grid2 item size={4}>
+          <Grid2 item offset={{ xs: 0, md: 4 }} size={{ xs: 12, md: 4 }}>
             <WindowCard
               title='Value'
               body='We value excellence, creativity, transparency, and trustworthiness. We foster engagement, prioritize customer satisfaction, and make work enjoyable for all.'

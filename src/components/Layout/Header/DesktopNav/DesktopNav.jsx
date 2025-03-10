@@ -1,3 +1,4 @@
+import Link from "next/link";
 import classes from "../../Layout.module.css";
 import { MdKeyboardArrowDown, MdTag, MdGroups, MdDesignServices, MdLanguage } from "react-icons/md";
 
@@ -6,9 +7,9 @@ const DesktopNav = () => {
     <nav className={`${classes["header__nav"]} desktop-view`}>
       <ul>
         <li>
-          <a href='#' className={classes["header__nav-link"]}>
+          <Link href='who-we-are' className={classes["header__nav-link"]}>
             Who We Are
-          </a>
+          </Link>
         </li>
         <li className={classes["header__nav-parent"]}>
           <a href='#' className={classes["header__nav-link"]}>

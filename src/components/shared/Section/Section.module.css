@@ -1,6 +1,8 @@
 .section {
-  padding: 20px;
-  margin-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+  padding: 80px;
 }
 .section.small {
   min-height: 25vh;
@@ -21,4 +23,10 @@
   font-weight: 500;
   margin: 0px;
   color: var(--primary-blue-color);
+}
+
+@media only screen and (max-width: 603px) {
+  .section {
+    padding: 50px 20px;
+  }
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import classes from "../Layout.module.css";
@@ -11,7 +12,9 @@ const Header = () => {
     <header className={classes["header"]}>
       <HeaderBackground />
       <div className={classes["header__wrapper"]}>
-        <Image src={LOGO_WHITE} className={classes["web-logo"]} alt='CodeByIO' />
+        <Link href='/'>
+          <Image src={LOGO_WHITE} className={classes["web-logo"]} alt='CodeByIO' />
+        </Link>
         <DesktopNav />
         <MobileNav />
       </div>
