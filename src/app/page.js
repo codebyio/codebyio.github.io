@@ -15,29 +15,28 @@ export default function Home() {
       />
       <Section position='center'>
         <h3 className='text-center'>
-          {`At CodeByIO, we turn digital dreams into reality with expert craftsmanship and innovative solutions.`}
-          <br></br>
-          {`We're committed to delivering high-performance, user-friendly websites that bring visions to life.`}
-          <br></br>
-          {`Trust in our experience, rely on our professionalism, and enjoy the journey of building something amazing together.`}
+          At CodeByIO, we turn digital dreams into reality with expert craftsmanship and innovative
+          solutions. We’re committed to delivering high-performance, user-friendly websites that
+          bring visions to life. Trust in our experience, rely on our professionalism, and enjoy the
+          journey of building something amazing together.
         </h3>
       </Section>
       <Section position='center'>
-        <Grid2 container spacing={3}>
-          <Grid2 item offset={{ xs: 0, md: 2 }} size={{ xs: 12, md: 4 }}>
+        <Grid2 container spacing={4}>
+          <Grid2 item offset={{ xs: 0, md: 1.5 }} size={{ xs: 12, sm: 6, md: 3 }}>
             <WindowCard
               title='Vision'
               body='To be the trusted partner for transforming digital dreams into reality, delivering high-quality websites and expert tech consultancy with a fun and engaging approach.'
             />
           </Grid2>
-          <Grid2 item size={{ xs: 12, md: 4 }}>
+          <Grid2 item size={{ xs: 12, sm: 6, md: 3 }}>
             <WindowCard
               title='Mission'
               body='To provide tailored web solutions and consultancy services, combining creativity, expertise, and a fun spirit to ensure client satisfaction and success.'
               invertColor={true}
             />
           </Grid2>
-          <Grid2 item offset={{ xs: 0, md: 4 }} size={{ xs: 12, md: 4 }}>
+          <Grid2 item offset={{ sm: 3, md: 0 }} size={{ xs: 12, sm: 6, md: 3 }}>
             <WindowCard
               title='Value'
               body='We value excellence, creativity, transparency, and trustworthiness. We foster engagement, prioritize customer satisfaction, and make work enjoyable for all.'

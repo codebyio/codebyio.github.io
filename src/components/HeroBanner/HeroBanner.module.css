@@ -28,7 +28,7 @@
 .hero-banner__title {
   font-family: "JetsBrain";
   font-size: 3rem;
-  width: 80%;
+  width: 100%;
   margin: 0px auto 1.875rem auto;
   color: var(--secondary-color);
   font-weight: 500;
@@ -39,6 +39,14 @@
   width: 80%;
   margin: 0px auto 1.875rem auto;
   color: var(--secondary-color);
+}
+.hero-banner__scroll {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: auto;
 }
 @media only screen and (max-width: 875px) {
   .hero-banner__title {

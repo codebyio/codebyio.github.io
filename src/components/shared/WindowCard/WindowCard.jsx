@@ -1,7 +1,8 @@
+import Link from "next/link";
 import classes from "./WindowCard.module.css";
 import { PiTreeStructure } from "react-icons/pi";
 
-const WindowCard = ({ title, body, invertColor }) => {
+const WindowCard = ({ title, body, href, invertColor }) => {
   return (
     <article className={`${classes["window-card"]} ${invertColor && classes["inverted"]}`}>
       <div className={classes["window-card__tool"]}>
@@ -13,7 +14,9 @@ const WindowCard = ({ title, body, invertColor }) => {
         </div>
         <div>
           <span className={classes["min"]}></span>
-          <span className={classes["max"]}></span>
+          <span className={classes["max"]}>
+            <span></span>
+          </span>
           <span className={classes["close"]}>
             <span></span>
             <span></span>
@@ -23,6 +26,11 @@ const WindowCard = ({ title, body, invertColor }) => {
       <div className={classes["window-card__content"]}>
         <h2 className={classes["window-card__title"]}>{title}</h2>
         <p className={classes["window-card__body"]}>{body}</p>
+        {href && (
+          <Link href={href} className={classes["window-card__link"]}>
+            <button>Learn More</button>
+          </Link>
+        )}
       </div>
     </article>
   );

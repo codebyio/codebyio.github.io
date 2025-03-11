@@ -1,6 +1,6 @@
 import classes from "./Section.module.css";
 
-const Section = ({ children, size = "small", position }) => {
+const Section = ({ children, title, size = "small", position }) => {
   return (
     <section
       className={`${classes["section"]} 
@@ -8,6 +8,7 @@ const Section = ({ children, size = "small", position }) => {
         size == "large" && classes["large"]
       } ${position == "center" && classes["center"]}`}
     >
+      {title && <h2 className={classes["section-title"]}>{title}</h2>}
       {children}
     </section>
   );

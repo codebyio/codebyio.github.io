@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classes from "./HeroBanner.module.css";
 import CODEBYIO_HERO from "../../../public/assets/images/CODEBYIO_HERO.webp";
-import CtaButton from "../shared/CtaButton/CtaButton";
+import MOUSESCROLL from "../../../public/assets/gif/MOUSESCROLL.gif";
 
 const HeroBanner = ({ title, subtitle, img, alt, href }) => {
   return (
@@ -10,7 +10,11 @@ const HeroBanner = ({ title, subtitle, img, alt, href }) => {
       <div>
         <h1 className={classes["hero-banner__title"]}>{title}</h1>
         <h2 className={classes["hero-banner__subtitle"]}>{subtitle}</h2>
-        {href && <CtaButton message='Start Your Project' href={href} />}
+        <Image
+          src={MOUSESCROLL}
+          className={classes["hero-banner__scroll"]}
+          alt='Mouse Scroll Gif'
+        />
       </div>
     </section>
   );

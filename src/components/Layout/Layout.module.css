@@ -216,6 +216,9 @@
   padding: 60px 30px;
   background-color: var(--secondary-color);
 }
+.footer-desc {
+  font-size: 14px;
+}
 .footer .web-logo {
   height: 35px;
 }
@@ -250,9 +253,10 @@
 .footer__nav-link {
   color: var(--primary-green-color);
   text-decoration: none;
+  font-size: 14px;
 }
 .footer__bottom {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
 }
 
