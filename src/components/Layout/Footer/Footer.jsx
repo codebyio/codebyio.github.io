@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import LOGO_COLOR from "../../../../public/assets/icon/LOGO_COLOR_TEXT.png";
@@ -43,14 +44,14 @@ const Footer = () => {
             <ul>
               <li>Company</li>
               <li>
-                <a href='#' className={classes["footer__nav-link"]}>
+                <Link href='/who-we-are' className={classes["footer__nav-link"]}>
                   Who We Are
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#' className={classes["footer__nav-link"]}>
+                <Link href='/contact-us' className={classes["footer__nav-link"]}>
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

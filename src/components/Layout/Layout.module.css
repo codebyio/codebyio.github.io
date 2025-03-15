@@ -125,7 +125,7 @@
   height: 100%;
   background-color: var(--primary-blue-color);
   z-index: 4;
-  transition: 0.4s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 .mobile-menu.is-toggled {
   right: 0px;
@@ -141,7 +141,7 @@
   visibility: hidden;
   z-index: 3;
   pointer-events: none;
-  transition: 0.4s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 .mobile-menu__overlay.is-toggled {
   opacity: 0.6;
@@ -199,7 +199,7 @@
   padding: 0px !important;
 }
 .mobile-menu__service-sub li {
-  padding: 15px 0px !important;
+  padding: 15px 0px 15px 30px !important;
 }
 .mobile-menu__service-sub li:last-child {
   padding-bottom: 0px !important;

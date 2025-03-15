@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import IconButton from "@mui/material/IconButton";
 import Accordion from "@mui/material/Accordion";
@@ -12,63 +14,85 @@ import classes from "../../Layout.module.css";
 import LOGO_WHITE from "../../../../../public/assets/icon/LOGO_WHITE.png";
 
 const MobileNav = () => {
+  const pathname = usePathname();
   const [menuIsToggled, setMenuIsToggled] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuIsToggled((prevState) => !prevState);
+  const handleOpenMenu = () => {
+    setMenuIsToggled(true);
+  };
+
+  const handleCloseMenu = () => {
+    setMenuIsToggled(false);
   };
 
   useEffect(() => {
     setMenuIsToggled(false);
   }, []);
 
+  useEffect(() => {
+    handleCloseMenu();
+  }, [pathname]);
+
   return (
     <div className='mobile-view'>
-      <IconButton className={`${classes["mobile-menu-toggle"]} p-0`} size='small' onClick={toggleMenu}>
+      <IconButton
+        className={`${classes["mobile-menu-toggle"]} p-0`}
+        size='small'
+        onClick={handleOpenMenu}
+      >
         <MdMenu fontSize='1.6rem' />
       </IconButton>
       <div className={`${classes["mobile-menu"]} ${menuIsToggled && classes["is-toggled"]}`}>
         <div className={classes["mobile-menu__header"]}>
           <Image src={LOGO_WHITE} className={classes["web-logo"]} alt='CodeByIO' />
-          <IconButton size='small' className={`${classes["close-btn"]} p-0`} onClick={toggleMenu}>
+          <IconButton
+            size='small'
+            className={`${classes["close-btn"]} p-0`}
+            onClick={handleCloseMenu}
+          >
             <MdClose fontSize='1.875rem' />
           </IconButton>
         </div>
         <nav className={classes["mobile-menu__nav"]}>
           <ul>
             <li>
-              <a href='#' className={classes["mobile-menu__nav-link"]}>
+              <Link href='/who-we-are' className={classes["mobile-menu__nav-link"]}>
                 Who We Are
-              </a>
+              </Link>
             </li>
-            <Accordion disableGutters component='li' className={classes["mobile-menu__nav-service"]}>
-              <AccordionSummary expandIcon={<MdKeyboardArrowDown fontSize='1.875rem' />}>Services</AccordionSummary>
+            <Accordion
+              disableGutters
+              component='li'
+              className={classes["mobile-menu__nav-service"]}
+            >
+              <AccordionSummary expandIcon={<MdKeyboardArrowDown fontSize='1.875rem' />}>
+                Services
+              </AccordionSummary>
               <AccordionDetails className={classes["mobile-menu__service-sub"]}>
                 <ul>
                   <li>
-                    <a href=''>Website Development</a>
+                    <Link href='/services/website-development'>Website Development</Link>
                   </li>
                   <li>
-                    <a href=''>Website Mockup</a>
+                    <Link href='/services/website-mockup'>Website Mockup</Link>
                   </li>
                   <li>
-                    <a href=''>Tech Consultancy</a>
-                  </li>
-                  <li>
-                    <a href=''>Digital Marketing</a>
+                    <Link href='/services/tech-consultancy'>Tech Consultancy</Link>
                   </li>
                 </ul>
               </AccordionDetails>
             </Accordion>
             <li>
-              <a href='#' className={classes["mobile-menu__nav-link"]}>
+              <Link href='/contact-us' className={classes["mobile-menu__nav-link"]}>
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </div>
-      <div className={`${classes["mobile-menu__overlay"]} ${menuIsToggled && classes["is-toggled"]}`}></div>
+      <div
+        className={`${classes["mobile-menu__overlay"]} ${menuIsToggled && classes["is-toggled"]}`}
+      ></div>
     </div>
   );
 };

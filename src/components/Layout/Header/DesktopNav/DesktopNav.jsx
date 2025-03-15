@@ -7,7 +7,7 @@ const DesktopNav = () => {
     <nav className={`${classes["header__nav"]} desktop-view`}>
       <ul>
         <li>
-          <Link href='who-we-are' className={classes["header__nav-link"]}>
+          <Link href='/who-we-are' className={classes["header__nav-link"]}>
             Who We Are
           </Link>
         </li>
@@ -18,35 +18,29 @@ const DesktopNav = () => {
           </a>
           <ul className={classes["header__sub-menu"]}>
             <li>
-              <a href=''>
+              <Link href='/services/website-development'>
                 <MdLanguage />
                 Website Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a href=''>
+              <Link href='/services/website-mockup'>
                 <MdDesignServices />
                 Website Mockup
-              </a>
+              </Link>
             </li>
             <li>
-              <a href=''>
-                <MdTag />
-                Digital Marketing
-              </a>
-            </li>
-            <li>
-              <a href=''>
+              <Link href='/services/tech-consultancy'>
                 <MdGroups />
                 Tech Consultancy
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
         <li>
-          <a href='#' className={classes["header__nav-link"]}>
+          <Link href='/contact-us' className={classes["header__nav-link"]}>
             Contact Us
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

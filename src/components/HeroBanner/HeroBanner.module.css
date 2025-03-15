@@ -50,14 +50,17 @@
 }
 @media only screen and (max-width: 875px) {
   .hero-banner__title {
-    width: 75%;
     font-size: 3rem;
   }
 }
 @media only screen and (max-width: 603px) {
   .hero-banner__title {
     width: 100%;
-    font-size: 2rem;
+    font-size: 10vw;
     padding: 20px;
+    margin: 0px;
+  }
+  .hero-banner__subtitle {
+    font-size: 1.25rem;
   }
 }
