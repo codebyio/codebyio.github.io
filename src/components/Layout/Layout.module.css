@@ -216,8 +216,12 @@
   padding: 60px 30px;
   background-color: var(--secondary-color);
 }
+.footer.contact-us {
+  background-color: var(--primary-blue-color);
+}
 .footer-desc {
   font-size: 14px;
+  color: var(--primary-green-color);
 }
 .footer .web-logo {
   height: 35px;
@@ -250,6 +254,9 @@
   font-weight: 600;
   font-family: "JetsBrain";
 }
+.footer.contact-us .footer__nav ul li:first-child {
+  color: var(--primary-green-color);
+}
 .footer__nav-link {
   color: var(--primary-green-color);
   text-decoration: none;
@@ -258,6 +265,12 @@
 .footer__bottom {
   font-size: 12px;
   font-weight: 500;
+  color: var(--primary-blue-color);
+}
+.footer.contact-us .footer-desc,
+.footer.contact-us .footer__nav-link,
+.footer.contact-us .footer__bottom {
+  color: #fff;
 }
 
 /*============================================*

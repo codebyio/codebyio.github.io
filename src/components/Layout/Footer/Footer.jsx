@@ -1,65 +1,14 @@
-import Link from "next/link";
-import Image from "next/image";
+"use client";
 
-import LOGO_COLOR from "../../../../public/assets/icon/LOGO_COLOR_TEXT.png";
-import classes from "../Layout.module.css";
+import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
+import FooterContent from "./FooterContent";
 
 const Footer = () => {
-  return (
-    <footer className={classes["footer"]}>
-      <div className={classes["footer__upper"]}>
-        <div>
-          <Image src={LOGO_COLOR} className={classes["web-logo"]} alt='CodeByIO' />
-          <p className={`${classes["footer-desc"]} text-primary-g`}>
-            We are your partner for handcrafted, high-performance web solutions.
-          </p>
-        </div>
-        <div>
-          <nav className={classes["footer__nav"]}>
-            <ul>
-              <li>Services</li>
-              <li>
-                <a href='#' className={classes["footer__nav-link"]}>
-                  Website Development
-                </a>
-              </li>
-              <li>
-                <a href='#' className={classes["footer__nav-link"]}>
-                  Website Mockup
-                </a>
-              </li>
-              <li>
-                <a href='#' className={classes["footer__nav-link"]}>
-                  Digital Marketing
-                </a>
-              </li>
-              <li>
-                <a href='#' className={classes["footer__nav-link"]}>
-                  Tech Consultancy
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li>Company</li>
-              <li>
-                <Link href='/who-we-are' className={classes["footer__nav-link"]}>
-                  Who We Are
-                </Link>
-              </li>
-              <li>
-                <Link href='/contact-us' className={classes["footer__nav-link"]}>
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div className={`${classes["footer__bottom"]} text-primary`}>
-        © CodeByIO 2024 — All Rights Reserved
-      </div>
-    </footer>
-  );
+  const pathname = usePathname();
+  const variant = pathname === "/contact-us" ? "contact" : "default";
+
+  return <FooterContent variant={variant} />;
 };
 
 export default Footer;
