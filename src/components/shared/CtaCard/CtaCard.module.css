@@ -38,6 +38,16 @@
   font-size: 2rem;
   background-color: var(--primary-green-color);
 }
+.cta-card__button {
+  background-color: var(--primary-green-color);
+  border: none;
+  padding: 6px 20px;
+  margin-top: 0.5rem;
+  border-radius: 30px;
+  font-family: "Jetsbrain";
+  font-size: 14px;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 875px) {
   .cta-card > a {
