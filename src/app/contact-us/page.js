@@ -15,8 +15,9 @@ export default function Home() {
     <>
       <HeroBanner
         title='Contact Us'
-        subtitle='Delivering innovative web solutions and data-driven marketing strategies to help businesses grow.'
+        subtitle='Ready to bring your digital vision to life?'
         alt='Hero Banner'
+        subtitleType='short'
       />
       <Section>
         <Grid2 container className={classes["contact-info"]}>

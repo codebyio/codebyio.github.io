@@ -66,6 +66,7 @@
 
 :root {
   --primary-blue-color: #1a3358;
+  --primary-blue-color-darker: #162a4a;
   --primary-green-color: #00a5a7;
   --secondary-color: #f8f3f7;
 }
@@ -79,6 +80,11 @@ body {
 }
 main {
   min-height: 100dvh;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .text-center {

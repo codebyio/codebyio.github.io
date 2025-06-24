@@ -1,0 +1,46 @@
+.cta-card {
+  background-color: var(--primary-blue-color);
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.cta-card:hover {
+  background: var(--primary-blue-color-darker);
+}
+.cta-card * {
+  color: #fff;
+}
+.cta-card > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 100px 30px;
+  text-decoration: none;
+}
+.cta-card__title,
+.cta-card__subtitle {
+  margin: 0px;
+}
+.cta-card__title {
+  word-spacing: 100vw;
+  font-weight: 500;
+  font-family: "JetsBrain";
+}
+.cta-card__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: var(--primary-green-color);
+}
+
+@media only screen and (max-width: 875px) {
+  .cta-card > a {
+    padding: 60px 20px;
+  }
+}

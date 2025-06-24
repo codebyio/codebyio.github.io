@@ -1,6 +1,8 @@
 import Link from "next/link";
 import classes from "../../Layout.module.css";
-import { MdKeyboardArrowDown, MdTag, MdGroups, MdDesignServices, MdLanguage } from "react-icons/md";
+import { MdKeyboardArrowDown, MdGroups, MdDesignServices, MdLanguage } from "react-icons/md";
+import { LuHandshake } from "react-icons/lu";
+import { FaHandshakeSimple } from "react-icons/fa6";
 
 const DesktopNav = () => {
   return (
@@ -33,6 +35,12 @@ const DesktopNav = () => {
               <Link href='/services/tech-consultancy'>
                 <MdGroups />
                 Tech Consultancy
+              </Link>
+            </li>
+            <li>
+              <Link href='/services/tech-consultancy'>
+                <FaHandshakeSimple />
+                One-Stop Solution
               </Link>
             </li>
           </ul>

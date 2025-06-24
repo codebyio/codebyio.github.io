@@ -14,11 +14,9 @@ export default function Home() {
       />
       <Section>
         <h3 className='text-center'>
-          Our mission is to help clients create the websites they envision with the best
-          performance. We specialize in Web Development and Tech Consultancy, making sure every
-          project meets high standards of quality and efficiency. Our vision is to turn ideas into
-          reality by providing personalized, professional, and enjoyable services. We believe in
-          simplicity and excellence, and we’re dedicated to making your web dreams come true.
+          At codebyIO, we provide a range of services to help you build and grow your online
+          presence — from custom web mockups and development to expert tech consultancy, all
+          designed to deliver a high-performance website that fits your business needs.
         </h3>
       </Section>
       <Section title='Our Services' position='center'>

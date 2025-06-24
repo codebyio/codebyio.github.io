@@ -1,0 +1,48 @@
+.folder-item {
+  height: auto;
+  aspect-ratio: 2.5/1;
+}
+.folder-item__wing > span {
+  transform: translateY(4px);
+}
+.folder-item__big-ornament {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background-color: var(--primary-green-color);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+.folder-item__ornament {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: var(--primary-green-color);
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
+}
+.folder-item__wing > span:nth-child(2) {
+  transform: translate(-25%, 4px);
+}
+.folder-item__wing > span:nth-child(3) {
+  transform: translate(-50%, 4px);
+}
+.folder-item__body {
+  width: 100%;
+  height: auto;
+  padding: 10px 30px 15px 30px;
+  background-color: #badfe3;
+  clip-path: polygon(0 0, 90% 0, 100% 30px, 100% 80%, 90% 100%, 30px 100%, 0% 80%, 0% 30px);
+}
+.folder-item__title,
+.folder-item__desc {
+  margin: 0px;
+}
+.folder-item__title {
+  font-family: "JetsBrain";
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0.25rem;
+}
+.folder-item__desc {
+  font-weight: 400;
+  font-size: 14px;
+}

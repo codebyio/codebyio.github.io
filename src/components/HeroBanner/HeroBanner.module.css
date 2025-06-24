@@ -40,6 +40,9 @@
   margin: 0px auto 1.875rem auto;
   color: var(--secondary-color);
 }
+.hero-banner__subtitle.short {
+  width: 100%;
+}
 .hero-banner__scroll {
   position: absolute;
   bottom: 50px;

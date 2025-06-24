@@ -1,0 +1,46 @@
+.steplist__item {
+  display: flex;
+  gap: 1rem;
+}
+.steplist__index {
+  position: relative;
+}
+.steplist__index::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  border-left: 1px dashed var(--primary-blue-color);
+  left: calc(50% + 1px);
+  transform: translateX(-50%);
+}
+.steplist__item:last-child > .steplist__index::after {
+  border: none;
+}
+.steplist__index-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background-color: var(--primary-blue-color);
+  border-radius: 50%;
+  font-size: 20px;
+}
+.steplist__item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.steplist__item h2 {
+  font-family: "Jetsbrain";
+  font-weight: 500;
+  color: var(--primary-blue-color);
+  margin: 0px;
+}
+.steplist__item p {
+  margin: 0px;
+  margin-bottom: 2rem;
+  color: var(--primary-green-color);
+}

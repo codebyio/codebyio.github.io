@@ -11,9 +11,7 @@ const Footer = () => {
         <div>
           <Image src={LOGO_COLOR} className={classes["web-logo"]} alt='CodeByIO' />
           <p className={`${classes["footer-desc"]} text-primary-g`}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi obcaecati dolorem
-            eligendi, aliquam quisquam quod reiciendis, iure ex pariatur fugiat natus earum harum
-            nostrum illo, aut nihil expedita error consequatur?
+            We are your partner for handcrafted, high-performance web solutions.
           </p>
         </div>
         <div>
