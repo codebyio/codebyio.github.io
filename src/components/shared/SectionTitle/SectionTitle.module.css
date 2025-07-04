@@ -7,7 +7,7 @@
   margin-bottom: 3rem;
 }
 .section-title-wrapper.horizontal-style {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -26,7 +26,7 @@
   margin: 0px;
 }
 .section-subtitle {
-  color: #797979;
+  color: var(--primary-green-color);
   margin: 0px;
 }
 @media only screen and (max-width: 603px) {

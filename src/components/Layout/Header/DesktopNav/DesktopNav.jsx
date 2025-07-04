@@ -38,7 +38,7 @@ const DesktopNav = () => {
               </Link>
             </li>
             <li>
-              <Link href='/services/tech-consultancy'>
+              <Link href='/services/onestop-solution'>
                 <FaHandshakeSimple />
                 One-Stop Solution
               </Link>

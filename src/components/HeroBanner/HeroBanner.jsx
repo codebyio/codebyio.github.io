@@ -3,10 +3,17 @@ import classes from "./HeroBanner.module.css";
 import CODEBYIO_HERO from "../../../public/assets/images/CODEBYIO_HERO.webp";
 import MOUSESCROLL from "../../../public/assets/gif/MOUSESCROLL.gif";
 
-const HeroBanner = ({ title, subtitle, img, alt, href, subtitleType }) => {
+const HeroBanner = ({ title, subtitle, img, video, alt, href, subtitleType }) => {
   return (
     <section className={classes["hero-banner"]}>
-      <Image src={img || CODEBYIO_HERO} className={classes["hero-banner__img"]} alt={alt} />
+      {!video && (
+        <Image src={img || CODEBYIO_HERO} className={classes["hero-banner__img"]} alt={alt} />
+      )}
+      {video && (
+        <video autoPlay muted loop className={classes["hero-banner__img"]}>
+          <source src='/assets/videos/HOME.mp4' />
+        </video>
+      )}
       <div>
         <h1 className={classes["hero-banner__title"]}>{title}</h1>
         <h2 className={`${classes["hero-banner__subtitle"]} ${classes[subtitleType]}`}>

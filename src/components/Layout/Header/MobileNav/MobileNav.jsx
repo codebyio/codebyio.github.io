@@ -79,6 +79,9 @@ const MobileNav = () => {
                   <li>
                     <Link href='/services/tech-consultancy'>Tech Consultancy</Link>
                   </li>
+                  <li>
+                    <Link href='/services/onestop-solution'>One-Stop Solution</Link>
+                  </li>
                 </ul>
               </AccordionDetails>
             </Accordion>

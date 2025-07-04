@@ -17,7 +17,7 @@ export default async function serviceDetail({ params }) {
 
   return (
     <>
-      <HeroBanner title={serviceData.name} alt='Hero Banner' />
+      <HeroBanner title={serviceData.name} img={serviceData.image} alt='Hero Banner' />
       <Section>
         <h3 className='text-center'>{serviceData.description}</h3>
       </Section>

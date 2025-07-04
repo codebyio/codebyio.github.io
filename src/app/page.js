@@ -37,6 +37,7 @@ export default function Home() {
         title='Your Business Digitalization Partner'
         subtitle='Delivering innovative web solutions and data-driven marketing strategies to help businesses grow.'
         alt='Home Hero Banner'
+        video
         href='#'
       />
       <Section position='center'>
@@ -94,7 +95,7 @@ export default function Home() {
       </Section>
       <Section position='center'>
         <SectionTitle
-          title='Your Journey <br> With Us'
+          title='Your Journey With Us'
           subtitle='We provide a variety of digital solutions that include responsive web design, app development, digital marketing strategies and more.'
           horizontalStyle
         />
