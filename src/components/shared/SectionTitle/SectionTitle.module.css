@@ -33,6 +33,9 @@
   .section-title-wrapper.horizontal-style {
     flex-direction: column;
   }
+  .section-title-wrapper {
+    align-items: flex-start;
+  }
   .section-title-wrapper.horizontal-style .section-subtitle {
     text-align: left;
   }

@@ -15,10 +15,17 @@ export default function Home() {
     <>
       <HeroBanner
         title='Contact Us'
-        subtitle='Ready to bring your digital vision to life?'
+        subtitle='Got an idea, a problem, or just not sure where to start?'
         alt='Hero Banner'
         subtitleType='short'
       />
+      <Section position='center'>
+        <h3 className='text-center'>
+          Let’s talk it through. We’re here to listen, think with you, and help you figure out the
+          best way forward — even if it starts with a simple question. Whether you're ready to build
+          or just testing the waters, we’re the kind of team that loves diving in.
+        </h3>
+      </Section>
       <Section>
         <Grid2 container className={classes["contact-info"]}>
           <Grid2 size={{ xs: 12, sm: 5, md: 6 }}>

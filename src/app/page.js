@@ -15,19 +15,24 @@ import StepList from "@/components/shared/StepList/StepList";
 export default function Home() {
   const steps = [
     {
-      title: "Requirement Gathering",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit laboriosam, velit architecto illo, corporis sequi temporibus molestias dolor dolorem a iusto voluptate facere blanditiis quis magnam laborum eos rerum?",
+      title: "Discovery & Co-Creation",
+      description: `
+        <strong>Every great journey begins with a conversation</strong> We start by listening. You bring your goals, vision and challenges–we bring the insights, experience and solutions. It’s about co-creating the foundation of something that matters.
+      `,
     },
     {
       title: "Development",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit laboriosam, velit architecto illo, corporis sequi temporibus molestias dolor dolorem a iusto voluptate facere blanditiis quis magnam laborum eos rerum?",
+      description: `
+        <strong>Watch your ideas take shape, one line of code at a time</strong>
+        From website mockups to fully functioning websites, you’ll see your project grow in real time. We believe in transparent progress, consistent communication, and meaningful checkpoints.
+      `,
     },
     {
       title: "Delivery & Improvement",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit laboriosam, velit architecto illo, corporis sequi temporibus molestias dolor dolorem a iusto voluptate facere blanditiis quis magnam laborum eos rerum?",
+      description: `
+        <strong>Going live is just the beginning</strong>
+        We don’t deliver and disappear. We launch, we observe, we refine. Whether it’s performance tweaks, adding features or adapting new ideas–we’re in this for the long game. Partners don’t walk away after the delivery, they grow together.
+      `,
     },
   ];
 
@@ -35,26 +40,23 @@ export default function Home() {
     <>
       <HeroBanner
         title='Your Business Digitalization Partner'
-        subtitle='Delivering innovative web solutions and data-driven marketing strategies to help businesses grow.'
+        subtitle='Every idea deserves a website that feels right, functions beautifully, and grows with it.'
         alt='Home Hero Banner'
         video
         href='#'
       />
       <Section position='center'>
         <h3 className='text-center'>
-          At CodeByIO, we’re not just website developer, we’re your digital partners. We specialize
-          in fully custom-coded websites tailored to your brand’s identity and built for high
-          performance. With a strong foundation, our solutions are never templated, they’re crafted!
-          We bring more than technical expertise; we bring collaboration. We aim to go beyond the
-          typical client-vendor relationship by working closely with you as a strategic partner.
-          Whether you’re starting from stratch or scaling your digital presence, we help turn your
-          vision into a fully functional, optimized experience.
+          At CodebyIO, we build custom websites through clean code, clear communication, and
+          thoughtful collaboration. No templates, no shortcuts—just digital work shaped around what
+          matters to you. Whether you’re starting fresh or scaling up, we’re here to help you build
+          something real, purposeful, and ready to grow.
         </h3>
       </Section>
       <Section position='center'>
         <SectionTitle
           title='Our Digitalization Solutions'
-          subtitle='We provide a variety of digital solutions that include responsive web design, app development, digital marketing strategies and more.'
+          subtitle='We provide a variety of digital solutions that include web design, app development, digital marketing and more'
         />
         <Grid2
           container
@@ -66,37 +68,37 @@ export default function Home() {
           <Grid2 size={{ xs: 12, sm: 6, md: 3, lg: 3 }} minWidth={{ xs: 250, sm: 300, md: "auto" }}>
             <CtaCard
               title='Website Development'
-              subtitle='Increasing conversions, repeat traffic, and online authority across your website is our top priority'
+              subtitle='From company profiles to e-commerce, we build websites that feel right and run fast'
               icon={<MdLanguage />}
             />
           </Grid2>
           <Grid2 size={{ xs: 12, sm: 6, md: 3, lg: 3 }} minWidth={{ xs: 250, sm: 300, md: "auto" }}>
             <CtaCard
               title='Website Mockup'
-              subtitle='Increasing conversions, repeat traffic, and online authority across your website is our top priority'
+              subtitle='See your website before it’s built—mockups help us align on design and experience'
               icon={<MdDesignServices />}
             />
           </Grid2>
           <Grid2 size={{ xs: 12, sm: 6, md: 3, lg: 3 }} minWidth={{ xs: 250, sm: 300, md: "auto" }}>
             <CtaCard
               title='Tech Consultancy'
-              subtitle='Increasing conversions, repeat traffic, and online authority across your website is our top priority'
+              subtitle='From hosting to hiring, we help you make smart decisions that grow with your product'
               icon={<MdGroups />}
             />
           </Grid2>
           <Grid2 size={{ xs: 12, sm: 6, md: 3, lg: 3 }} minWidth={{ xs: 250, sm: 300, md: "auto" }}>
             <CtaCard
               title='One-Stop Solution'
-              subtitle='Increasing conversions, repeat traffic, and online authority across your website is our top priority'
+              subtitle='Already have a  live site? We add features, fix bugs, and improve things—no full rebuild needed'
               icon={<FaHandshakeSimple />}
             />
           </Grid2>
         </Grid2>
       </Section>
-      <Section position='center'>
+      <Section>
         <SectionTitle
-          title='Your Journey With Us'
-          subtitle='We provide a variety of digital solutions that include responsive web design, app development, digital marketing strategies and more.'
+          title='Your Journey with Us'
+          subtitle='Every brief is a beginning—and with thoughtful collaboration, we build what truly works.'
           horizontalStyle
         />
         <Grid2

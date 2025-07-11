@@ -16,7 +16,9 @@ const FooterContent = ({ variant }) => {
             alt='CodeByIO'
           />
           <p className={`${classes["footer-desc"]}`}>
-            We are your partner for handcrafted, high-performance web solutions.
+            Founded in 2024, CodebyIO helps people turn ideas into real, working websites. We work
+            side by side with you—from first thoughts to final launch—with clear communication and
+            clean code. We’re here as a friendly team that loves building great things together.
           </p>
         </div>
         <div>

@@ -44,3 +44,7 @@
   margin-bottom: 2rem;
   color: var(--primary-green-color);
 }
+.steplist__item p > strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}

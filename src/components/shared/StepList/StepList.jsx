@@ -12,7 +12,7 @@ const StepList = ({ steps }) => {
               </div>
               <div className={classes["steplist__item-content"]}>
                 <h2>{step.title}</h2>
-                <p>{step.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: step.description }}></p>
               </div>
             </article>
           );
