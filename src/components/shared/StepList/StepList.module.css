@@ -14,6 +14,9 @@
   left: calc(50% + 1px);
   transform: translateX(-50%);
 }
+.steplist.inverted .steplist__index::after {
+  border-color: var(--primary-green-color);
+}
 .steplist__item:last-child > .steplist__index::after {
   border: none;
 }
@@ -28,6 +31,9 @@
   border-radius: 50%;
   font-size: 20px;
 }
+.steplist.inverted .steplist__index-value {
+  background-color: var(--primary-green-color);
+}
 .steplist__item-content {
   display: flex;
   flex-direction: column;
@@ -38,6 +44,9 @@
   font-weight: 500;
   color: var(--primary-blue-color);
   margin: 0px;
+}
+.steplist.inverted .steplist__item h2 {
+  color: #ffffff;
 }
 .steplist__item p {
   margin: 0px;

@@ -1,0 +1,37 @@
+.faq {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+.faq,
+.faq > * {
+  font-family: "Roboto";
+}
+.accordion {
+  width: 100% !important;
+  box-shadow: none !important;
+  list-style: none;
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid var(--primary-blue-color);
+  padding: 10px 0px;
+}
+.accordion::before {
+  content: none !important;
+}
+.accordion-summary {
+  font-size: 16px;
+  color: var(--primary-blue-color) !important;
+  border-top: none !important;
+  font-weight: 400 !important;
+  font-family: "Roboto";
+}
+.accordion.expanded .accordion-summary {
+  font-weight: 600 !important;
+}
+.accordion .accordion-detail {
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: var(--primary-blue-color) !important;
+  text-align: justify !important;
+}

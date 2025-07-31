@@ -1,8 +1,8 @@
 import classes from "./StepList.module.css";
 
-const StepList = ({ steps }) => {
+const StepList = ({ steps, inverted }) => {
   return (
-    <div className={classes["steplist"]}>
+    <div className={`${classes["steplist"]} ${inverted && classes["inverted"]}`}>
       {steps &&
         steps.map((step, index) => {
           return (

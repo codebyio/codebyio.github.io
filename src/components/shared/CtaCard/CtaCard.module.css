@@ -2,6 +2,7 @@
   background-color: var(--primary-blue-color);
   border-radius: 10px;
   text-align: center;
+  height: 100%;
   transition: 0.5s;
 }
 .cta-card:hover {
@@ -19,6 +20,21 @@
   padding: 100px 30px;
   text-decoration: none;
 }
+.cta-card.non-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  aspect-ratio: 1 / 1;
+  text-decoration: none;
+  background-color: var(--primary-blue-color);
+}
+.cta-card.non-cta > * {
+  margin-bottom: 1rem;
+}
+.cta-card:hover.non-cta {
+  background-color: var(--primary-blue-color);
+}
 .cta-card__title,
 .cta-card__subtitle {
   margin: 0px;
@@ -27,6 +43,9 @@
   word-spacing: 100vw;
   font-weight: 500;
   font-family: "JetsBrain";
+}
+.cta-card.non-cta .cta-card__title {
+  word-spacing: normal;
 }
 .cta-card__icon-wrapper {
   display: flex;

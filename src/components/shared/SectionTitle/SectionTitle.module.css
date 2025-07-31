@@ -25,6 +25,9 @@
   color: var(--primary-blue-color);
   margin: 0px;
 }
+.section-title-wrapper.inverted .section-title {
+  color: #ffffff;
+}
 .section-subtitle {
   color: var(--primary-green-color);
   margin: 0px;

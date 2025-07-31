@@ -1,0 +1,36 @@
+.core-value {
+  display: flex;
+  background-color: var(--primary-blue-color);
+  padding: 15px;
+  gap: 0.875rem;
+  border-radius: 10px;
+}
+.core-value__title {
+  flex: 1;
+}
+.core-value__title > span {
+  display: inline-block;
+  font-family: "JetsBrain";
+  letter-spacing: -1px;
+  color: var(--primary-blue-color);
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  padding: 4px 10px;
+}
+.core-value__description {
+  flex: 2;
+}
+.core-value__description > p {
+  margin: 0px;
+  color: var(--secondary-color);
+  height: 60px;
+}
+
+@media only screen and (max-width: 603px) {
+  .core-value {
+    flex-direction: column;
+  }
+  .core-value__description > p {
+    height: 80px;
+  }
+}
